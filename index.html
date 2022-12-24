@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Clip-path Video Slideshow</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="box box1">
+				<video src="bg1.mp4" autoplay loop muted></video>
+				<div class="content">
+					<h2>Happy</h2>
+				</div>
+			</div>
+			<div class="box box2">
+				<video src="bg2.mp4" autoplay loop muted></video>
+				<div class="content">
+					<h2>New</h2>
+				</div>
+			</div>
+			<div class="box box3">
+				<video src="bg3.mp4" autoplay loop muted></video>
+				<div class="content">
+					<h2>Year</h2>
+				</div>
+			</div>
+			<div class="box box4">
+				<video src="bg4.mp4" autoplay loop muted></video>
+				<div class="content">
+					<h2>2023!</h2>
+				</div>
+			</div>
+		</div>
+		<audio controls autoplay loop>
+			<source src="Coldplay.mp3" type="audio/mpeg"/>
+		</audio>
+		<script>
+			let box = document.querySelectorAll('.box');
+			box.forEach(popup => popup.addEventListener('click', () => {
+				popup.classList.toggle('active')
+			}))
+		</script>
+	</body>
+</html>
